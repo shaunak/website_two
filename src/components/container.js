@@ -8,7 +8,7 @@ const Container = (props) => {
 	    <ExitButton exit={props.exit}/>
 	    <img src={me} className="portrait" />
 	    <p className="Title"> {props.title}  </p>
-	    <p className="Body"> Hi! I'm Shaunak, an undergrad studying Computer Science at the University of British Columbia. I've previously worked as an intern at <a href="https://gusto.com/" className="nav-link">Gusto</a> and <a href="https://zanbato.com/"> Zanbato</a>. In my free time, I like hiking, climbing, singing, and gaming.  </p>
+	    <p className="Body"> Hi! I'm Shaunak, an undergrad studying Computer Science at the University of British Columbia. I've previously worked as an intern at <a href="https://zanbato.com/"> Zanbato</a> and will start an internship at  <a href="https://gusto.com/" className="nav-link">Gusto</a> soon. In my free time, I like hiking, singing, and gaming.  </p>
 		<p className="Body"> <br/>  <a className="nav-link" href="https://github.com/shaunak">Github</a>	|	<a className="nav-link" href="https://linkedin.com/in/shaunakt">Linkedin</a>	|	<a href="mailto:shaun.tul@gmail.com" className="nav-link" >Email</a> </p>
 	  </div>
 	);
@@ -109,9 +109,6 @@ const ExpandButton = (props) => {
 }
 
 const ExitButton = (props) => { 
-	const testClick = () => {
-		console.log("hello there");
-	}
 	return (
 	 <div className="button" onClick={props.exit}><p> </p></div>
 
