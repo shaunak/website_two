@@ -2,6 +2,7 @@ import './App.css';
 import fileIcon from "./images/text-document.png"
 import homeIcon from "./images/home.png";
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet'
 import {Container, ResumeContainer} from "./components/container.js";
 
 const name = "Shaunak Tulshibagwale";
@@ -43,6 +44,7 @@ const App = () => {
 
   return (
    <>
+    <Helmet> <title>{"Shaunak's Website"} </title> </Helmet>
     <div className="iconLayout">
       <HomeButton destination={setHome} />
       <ResumeButton destination={setResume} />
